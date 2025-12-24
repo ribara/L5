@@ -8,10 +8,8 @@ const app = new Hono();
 // CORS configuration with whitelist
 const corsConfig = {
   origin: [
-    "*",
     "http://localhost:3000",
-    "http://localhost:5173",
-    "http://localhost:8080",
+    "https://learn.ribara.co",
     process.env.SITE_URL || "",
   ],
   allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
